@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Proforma" content="width=device-width, initial-scale=1.0">
+	<title>ASBL Proforma</title>
+	<link rel="stylesheet" href="normalisecss/normalise.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<script src="https://kit.fontawesome.com/4aa00963cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+	<h1>asbl proforma</h1>
+	<ul class="lienheader">
+		<li><a href="#presentation">Présentation</a></li>
+		<li><a href="#equipe">équipe</a></li>
+		<li><a href="#formations">Formations</a></li>
+		<li><a href="#docs">Documents</a></li>
+		<li><a href="#contact">Nous Contacter</a></li>
+    </ul>
+    </header>
+    <div class="titre2" id="presentation">
+    	<h2>qui sommes-nous ?</h2>
+    	
+    	<p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Nihil iusto, sequi veritatis nisi dicta ipsum adipisci numquam commodi, reprehenderit accusamus laborum, molestiae aliquid voluptatum est.</p>
+    	<div><a href="#contact"><i class="fa-regular fa-envelope"></i>Contact</a></div>
+    </div>
+    <div class="photoequipe" id="equipe">
+    	<h2>notre équipe</h2>
+       	<figure>
+    		<img src="images/formations.jpg" alt="photo de notre équipe">
+    		<figcaption>Découvrez les bases de la programmation web grâce à notre formation d'introduction à la programmation</figcaption>
+    	</figure>
+    	
+    </div>
+
+    <div id="formations">
+    	<h2 class="formation">Nos Formations</h2>
+    	<div class="titre2b">
+        <div class="titre3">
+           	<i class="fa-solid fa-language"></i>
+        	<span>fle</span>
+        	<h3>français langue étrangère</h3>
+        	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam neque minus qui deleniti perspiciatis suscipit autem pariatur possimus saepe praesentium. Cum, tempora.</p> 
+    	</div>
+    	<div class="titre3">
+    		<i class="fa-solid fa-people-group"></i>
+    		<span>cisp</span>
+    		<h3>centres d'insertion socioprofessionnelle</h2>
+    		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam neque minus qui deleniti perspiciatis suscipit autem pariatur possimus saepe praesentium. Cum, tempora.</p>
+    	</div>
+    	<div class="titre3">
+       		<i class="fa-solid fa-laptop-code"></i>
+    		<span>intro prog</span>
+    		<h3>introduction à la programmation</h2>
+    		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam neque minus qui deleniti perspiciatis suscipit autem pariatur possimus saepe praesentium. Cum, tempora.</p>
+    	</div>
+    	</div>
+    </div>	
+    <div class="docatelechar">
+    	<h2 id="docs">liens & document à télécharger</h2>
+    	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam neque minus qui deleniti perspiciatis</p>
+    	<ul class="bouton">
+    		<li class="bouton-or"><i class="fa-brands fa-facebook"></i><a href="www.facebook.com" target="_blank">Facebook</a></li>
+    	    <li class="bouton-or"><i class="fa-brands fa-square-twitter"></i><a href="www.twitter.com" target="_blank">Twitter</a></li>
+    	    <li class="bouton-or"><i class="fa-regular fa-envelope"></i><a href="#contact">Contact</a></li>
+    	    <li class="bouton-bleu"><i class="fa-solid fa-file-lines"></i><a href="documents/document1.pdf" target="_blank">Document 1</a></li>
+    	    <li class="bouton-bleu"><i class="fa-solid fa-file-lines"></i><a href="documents/document2.pdf" target="_blank">Document 2</a></li>
+    	</ul>
+    </div>
+    <div class="contacter">
+    	<h2 id="contact">nous contacter</h2>
+    	<form action="validation.php" method="POST">
+    		<div>
+    		<div>
+				<label for="nom">Votre nom *</label>
+			</div> 
+			<div> 
+				<input type="text" name="nom" id="nom" required placeholder="Ce champ est obligatoire">
+			</div>
+			<div>
+				<label for="prenom">Votre prénom *</label>
+			</div> 
+			<div>
+				<input type="text" name="prenom" id="prenom" required placeholder="Ce champ est obligatoire">
+			</div>
+			<div>
+				<label for="email">Votre e-mail :</label></div> 
+			<div>
+				<input type="email" name="email" id="email" placeholder="Votre e-mail doit contenir un @">
+			</div>
+			<div>
+				<label for="description">Votre message</label>
+			</div>
+			<div>
+				<textarea class="textarea" name="message" id="description"></textarea>
+			</div>
+	   		</div>
+    		
+    		<button type="submit">Envoyer</button>
+    		
+    	</form>
+    </div>
+    <footer class="copyright">
+    	<p><i class="fa-regular fa-copyright"></i>2025 ASBL Proforma</p>
+    </footer>
+</body>
+</html>

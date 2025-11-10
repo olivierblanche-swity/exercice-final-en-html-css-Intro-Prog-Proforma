@@ -1,0 +1,273 @@
+/* pour rendre fluide*/
+html {
+  scroll-behavior: smooth;
+}
+/* mettre l image en arriere plan et la fixer au nav*/
+body{
+	background:url(../images/darkness.png);
+	background-attachment: fixed;
+	margin:0;
+	padding:0;
+	
+}
+/* pour le header*/
+header{
+	margin:0;
+}
+header h1{
+	background:url(../images/header.jpg);
+	background-size: cover;
+	background-position: center;
+	padding:120px;
+}
+h1{
+	margin:0 auto;
+	color:white;
+	font-family:Oswald ;
+	font-size:60px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.lienheader{
+	background:#3f4d71;
+	display:flex;
+	justify-content: center;
+	gap:25px;
+	list-style-type: none; 
+	margin:0 auto;
+	font:20px;
+	padding:20px;
+}
+/* pour que tous les liens soient identique*/
+a{
+	color:#fff;
+	text-decoration: none;
+		
+}
+a:hover{
+	color:#c8d0e3;
+}
+/* qui sommes nous */
+.titre2{
+	margin:0 auto;
+	background-color: white;
+	text-align: center;
+	padding:100px;
+	background-image: url('../images/qsn-left.png'), url('../images/qsn-right.jpg'); 
+	background-repeat: no-repeat ; 
+	background-position: left center, right center; 
+	background-size: 20%;
+}	
+.titre2 h2{
+	color:black;
+	margin:0 auto;
+}
+.titre2 p{
+	max-width: 400px;
+	margin:30px auto;	
+}
+.titre2 div{
+	text-align: center;
+	background:#CCB16E;
+	border-radius: 10px;
+	padding:12px;
+	max-width: 70px;
+	margin:0 auto;
+	box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.titre2 div:hover{
+	background:#000 ;
+	transform: scale(0.9);
+}
+/*notre equipe*/
+h2{
+	color:black;
+	font-size: 30px;
+	font-family: Oswald;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.photoequipe{
+	color:white;
+	padding:20px;
+}
+.photoequipe h2{
+	color:white;
+}
+/*pour faire un cadre blanc derriere photo*/
+figure{
+	background:white;
+	border-radius: 10px;
+	max-width:900px;
+	border:25px solid white;
+	margin: 10px auto;
+}
+/* mettre image dans le cadre*/
+figure img{
+	width:100%;
+	border-radius: 10px;
+}
+/* pour la legende de la photo*/
+figcaption{
+	color:black;
+	font-size: 18px;
+	text-align: center;
+}
+/* nos formations*/
+.titre2b{
+	margin:0 auto;
+	background-color: white;
+	text-align: center;
+	padding: 50px;
+	display:flex; /* pout mettre les 3 div formations en flex */
+	justify-content: space-evenly;
+	gap: 15px;
+	border-bottom: 2px solid #CCB16E;
+}
+.formation{
+	color:black;
+	background: white;
+	padding: 30px;
+	margin: 0 auto;
+}
+/* les 3 formations*/
+.titre3{
+	font-size: 12px;
+	max-width: 250px;
+	text-align: center;	
+}
+.titre3 h3{
+	text-transform: uppercase;
+}
+.titre3 i{
+	color:#CCB16E;
+	font-size: 25px;
+}
+.titre3 span{
+	display: block;
+	margin-top: 5px;
+	color:#CCB16E;
+	font-size: 25px;
+}
+.titre3 h2{
+	color:#CCB16E;
+	font-size: 25px;
+}
+
+/* doc et liens*/
+.docatelechar{
+	background: white;
+	margin: 0 auto;
+	padding: 60px;
+}
+.docatelechar p{
+	text-align: center;
+}
+/* bouton pour liens et telecharger les docs*/
+.bouton{
+	display: flex;
+  	gap: 20px;
+  	flex-wrap: nowrap;
+ 	justify-content: center;
+  	align-items: center;
+ 	align-content: center;
+	list-style-type: none; 
+	margin:0 auto;
+	padding:20px;
+
+}
+.bouton-or{
+	color: white;
+	text-align: center;
+	background:#CCB16E;
+	border-radius: 10px;
+	padding:12px;
+	max-width: 90px;
+	box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bouton-bleu{
+	color: white;
+	text-align: center;
+	background:#5F6E95;
+	border-radius: 10px;
+	padding:12px;
+	max-width: 100px;
+	box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bouton-or:hover{
+	background:#000 ;
+	transform: scale(0.9);
+
+}
+.bouton-bleu:hover{
+	background:#000 ;
+	transform: scale(0.9);
+}
+/* nous contacter*/
+.contacter{
+	background:#5F6E95 ;
+	margin: 0 auto;
+	padding:20px;
+}
+.contacter h2{
+	color: white;
+}
+form {
+		background: white;
+		border-radius: 10px;
+		align-items: left;
+  	max-width: 350px;
+  	margin: 20px auto;
+  	padding: 10px;
+  	display: flex;
+  	flex-direction: column;
+  	gap: 10px;
+}
+label {
+  font-weight: bold;
+  font-size: 20px;
+
+}
+input, textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 92%;
+  margin-bottom: 5px;
+}
+.textarea {
+          
+  height: 100px;      
+  padding: 10px;     
+}
+
+button {
+		background:#CCB16E;
+		display:flex;
+		justify-content: center;
+		margin:0 15px;
+		padding: 15px;
+  	text-transform: uppercase;
+  	color: white;
+  	border: none;
+  	box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+
+  	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover {
+  	background-color: #000;
+  	transform: scale(0.9);
+}
+/* footer*/
+footer{
+	background:white;
+	color:grey;
+	font-size: 10px;
+	text-align: center;
+	padding: 10px;
+}
+
